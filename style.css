@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/login-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    background-color: transparent;
+    border: 1px solid rgba(178, 178, 178, 0.471);
+    border-radius: 0.625rem;
+    backdrop-filter: blur(35px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    padding: 1.875rem;
+    width: 95%;
+    max-width: 37.5rem;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.1875rem;
+    color: white;
+}
+
+.topo p {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #2A3B52;
+}
+
+.opcoes-login {
+    padding: 1.875rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.opcoes-login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.471);
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 9.375rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    transition: .2s;
+    font-size: 1rem;
+}
+
+.opcoes-login button:hover {
+    background-color: rgba(255, 255, 255, 0.29);
+    transform: scale(1.04);
+}
+
+.opcoes-login img {
+    max-width: 1.25rem;
+    max-height: 1.25rem;
+    margin-right: 0.3125rem;
+}
+
+.continue-email {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: #2A3B52;
+    font-weight: 500;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 0.9375rem;
+}
+
+.input-email-senha > input {
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 0;
+    font-size: 1rem;
+    font-family: "Outfit", sans-serif;
+    width: 22.5rem; 
+    height: 2.1875rem; 
+    padding-left: 2.25rem; 
+    color: white;
+}
+
+.input-email-senha > input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+::-webkit-input-placeholder {
+    color: #2A3B52;
+ }
+
+.input-email-senha {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.471);
+    border-radius: 0.3125rem;
+}
+
+.input-email-senha i {
+    position: absolute;
+    padding-left: 0.75rem;
+    color: #2A3B52;
+}
+
+.toggle-senha {
+  position: absolute;
+  top: 30%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.lembrar-esqueceu {
+    display: flex;
+    width: 21.875rem;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.input-lembrar {
+    display: flex;
+    gap: 0.3125rem;
+    color:white;
+}
+
+.input-lembrar > input {
+    width: 1.125rem; 
+}
+
+.esqueceu > a {
+    text-decoration: none;
+    color:white;
+}
+
+.esqueceu > a:hover {
+    color:#a5727c;
+}
+
+.btn-login {
+    padding-top: 1.875rem; 
+    padding-bottom: 1.25rem; 
+}
+
+.btn-login > button {
+    width: 22.5rem;
+    height: 2.1875rem; 
+    border-radius: 0.3125rem; 
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    border: 0;
+    background-color: #A07B8B;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-login > button:hover {
+    transform: scale(1.04);
+}
+
+.criar-conta {
+    display: flex;
+    gap: 0.5rem;
+    color:#A07B8B;
+}
+
+.criar-conta > a {
+    text-decoration: none;
+    color: white;
+}
+
+.criar-conta > a:hover {
+    color:#a5727c;
+}
+
+
+@media (max-width: 575px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+}

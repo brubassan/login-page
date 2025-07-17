@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="login-form">
+        <div class="container">
+            <div class="topo">
+                <h1>Entre na sua conta</h1>
+                <p>Bem-vindo de volta! Escolha a opção de login:</p>
+            </div>
+            <div class="opcoes-login">
+                <button>
+                    <img src="img/logo-google.png" alt="Login com Google"> Google
+                </button>
+                <button>
+                    <img src="img/facebook-logo.png" alt="Login com Facebook"> Facebook
+                </button>
+            </div>
+            <div class="continue-email">
+                <p>ou continue com o email</p>
+            </div>
+            <div class="inputs">
+                <div class="input-email-senha">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-email-senha">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senhaInput" placeholder="Senha">
+                    <span class="toggle-senha" id="toggleSenha">
+                        <i class="fa fa-eye-slash"></i> </span>
+                </div>
+            </div>
+            <div class="lembrar-esqueceu">
+                <div class="input-lembrar">
+                    <input type="checkbox" name="lembrar" id="lembrar">
+                    <label for="lembrar">Lembrar de mim</label>
+                </div>
+                <div class="esqueceu">
+                    <a href="">Esqueceu a senha?</a>
+                </div>
+            </div>
+            <div class="btn-login">
+                <button>
+                    Entrar
+                </button>
+            </div>
+            <div class="criar-conta">
+                <p>Não tem uma conta?</p>
+                <a href="">Criar uma conta</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const senhaInput = document.getElementById('senhaInput');
+            const toggleSenha = document.getElementById('toggleSenha');
+
+            toggleSenha.addEventListener('click', function () {
+                const type = senhaInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                senhaInput.setAttribute('type', type);
+
+                this.querySelector('i').classList.toggle('fa-eye-slash');
+                this.querySelector('i').classList.toggle('fa-eye');
+            });
+        });
+    </script>
+</body>
+
+</html>
